@@ -1,2 +1,0 @@
-class FeedbackTable < ApplicationRecord
-end
