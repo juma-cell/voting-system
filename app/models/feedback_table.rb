@@ -1,0 +1,2 @@
+class FeedbackTable < ApplicationRecord
+end
