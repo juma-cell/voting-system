@@ -10,13 +10,13 @@ import Voting from './Pages/Voting'
 function App() {
   return (
     <>
-    <About/>
-   <Election/>
-   <Header/>
+    <Signup/>
    <Login/>
+   <Header/>
    <Profile/>
-   <Signup/>
    <Voting/>
+   <Election/>
+   <About/>
    
 
 
