@@ -1,7 +1,7 @@
 import React from "react"
 
 // React Router Import
-import { Route, Switch, Redirect } from "react-router-dom"
+import { Route, Routes, Redirect } from "react-router-dom"
 
 // Pages Import
 import About from "./Pages/About"
@@ -17,31 +17,14 @@ function App() {
     <div className="min-h-screen text-white">
       {/* <Header /> */}
       <div>
-        <Switch>
-          <Route path="/" exact>
-            <About />
-          </Route>
-
-          <Route path="/election" exact>
-            <Election />
-          </Route>
-
-          <Route path="/login" exact>
-            <Login />
-          </Route>
-
-          <Route path="/profile" exact>
-            <Profile />
-          </Route>
-
-          <Route path="/signup" exact>
-            <Signup />
-          </Route>
-
-          <Route path="/voting" exact>
-            <Voting />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route exact path="/" element={<About />} />
+          <Route exact path="/election" element={<Election />} />
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/profile" element={<Profile />} />
+          <Route exact path="/signup" element={<Signup />} />
+          <Route exact path="/voting" element={<Voting />} />
+        </Routes>
       </div>
     </div>
   )
