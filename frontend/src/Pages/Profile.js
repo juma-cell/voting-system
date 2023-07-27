@@ -1,8 +1,16 @@
-import React from 'react'
+import React from "react"
+import ProfileHeader from "../components/profile-header"
 
 function Profile() {
   return (
-    <div>Profile</div>
+    <>
+      <ProfileHeader />
+
+      <div className="flex">
+        <div className="w-[50%]">image</div>
+        <div className="w-[50%]">profile</div>
+      </div>
+    </>
   )
 }
 
